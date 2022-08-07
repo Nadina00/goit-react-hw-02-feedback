@@ -1,13 +1,9 @@
-import styled from "styled-components"
+import {Title} from './Section.styled'
+
+
 export const Section = ({title})=> {
 
-    const Title = styled.h2`
-    font-size: 50px;
-    margin-left: 30px;
-
-  `;
-
-    return (
+     return (
     <div>
            
         <Title>{title}</Title>
