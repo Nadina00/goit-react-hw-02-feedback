@@ -4,7 +4,7 @@ import {Section} from 'components/Section/Section';
 import { Statistics } from 'components/Statistics/Statistics';
 import {Notification} from 'components/Notification/Notification'
 import PropTypes from 'prop-types';
-import styled from "styled-components"
+import {Box} from './App.styled'
 
 export class App extends React.Component {
   state = {
@@ -40,12 +40,7 @@ countPositiveFeedbackPercentage = () => {
     const { good, neutral, bad } = this.state;
     const keys = Object.keys(this.state);
   
-    const Box  = styled.div`
-        display: block,
-        color: #010101,
-        padding: 10px,
-      
-    `;  
+    
   return (
     <Box>     
         
